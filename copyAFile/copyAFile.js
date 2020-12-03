@@ -5,7 +5,6 @@ async function copyAFile(src, dst) {
     const fileData = await fsPromises.readFile(src, 'utf-8');
     console.log(src);
     await fsPromises.writeFile(dst, fileData);
-
   } catch (err) {
     console.log(err);
   }
